@@ -1,0 +1,71 @@
+BEGIN;
+CREATE INDEX arruamento_nao_implantado_gid_btree ON ippucarruamento2014.arruamento_nao_implantado (gid);
+ALTER INDEX ippucarruamento2014.arruamento_nao_implantado_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.arruamento_nao_implantado_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.arruamento_nao_implantado SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX arruamento_quadras_ln_gid_btree ON ippucarruamento2014.arruamento_quadras_ln (gid);
+ALTER INDEX ippucarruamento2014.arruamento_quadras_ln_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.arruamento_quadras_ln_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.arruamento_quadras_ln SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX arruamento_quadras_gid_btree ON ippucarruamento2014.arruamento_quadras (gid);
+ALTER INDEX ippucarruamento2014.arruamento_quadras_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.arruamento_quadras_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.arruamento_quadras SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX calcadao_gid_btree ON ippucarruamento2014.calcadao (gid);
+ALTER INDEX ippucarruamento2014.calcadao_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.calcadao_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.calcadao SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX cemiterios_gid_btree ON ippucarruamento2014.cemiterios (gid);
+ALTER INDEX ippucarruamento2014.cemiterios_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.cemiterios_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.cemiterios SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX eixo_rua_gid_btree ON ippucarruamento2014.eixo_rua (gid);
+ALTER INDEX ippucarruamento2014.eixo_rua_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.eixo_rua_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.eixo_rua SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX elem_rep_corpos_d_agua_gid_btree ON ippucarruamento2014.elem_rep_corpos_d_agua (gid);
+ALTER INDEX ippucarruamento2014.elem_rep_corpos_d_agua_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.elem_rep_corpos_d_agua_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.elem_rep_corpos_d_agua SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX elem_rep_edificacoes_gid_btree ON ippucarruamento2014.elem_rep_edificacoes (gid);
+ALTER INDEX ippucarruamento2014.elem_rep_edificacoes_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.elem_rep_edificacoes_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.elem_rep_edificacoes SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX elem_rep_elementos_internos_gid_btree ON ippucarruamento2014.elem_rep_elementos_internos (gid);
+ALTER INDEX ippucarruamento2014.elem_rep_elementos_internos_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.elem_rep_elementos_internos_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.elem_rep_elementos_internos SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX elem_rep_obras_de_arte_gid_btree ON ippucarruamento2014.elem_rep_obras_de_arte (gid);
+ALTER INDEX ippucarruamento2014.elem_rep_obras_de_arte_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.elem_rep_obras_de_arte_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.elem_rep_obras_de_arte SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX meio_fio_ln_gid_btree ON ippucarruamento2014.meio_fio_ln (gid);
+ALTER INDEX ippucarruamento2014.meio_fio_ln_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.meio_fio_ln_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.meio_fio_ln SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX meio_fio_gid_btree ON ippucarruamento2014.meio_fio (gid);
+ALTER INDEX ippucarruamento2014.meio_fio_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.meio_fio_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.meio_fio SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX parques_e_bosques_gid_btree ON ippucarruamento2014.parques_e_bosques (gid);
+ALTER INDEX ippucarruamento2014.parques_e_bosques_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.parques_e_bosques_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.parques_e_bosques SET TABLESPACE postgiscwbguilherme_tables;
+
+CREATE INDEX pracas_e_jardinetes_gid_btree ON ippucarruamento2014.pracas_e_jardinetes (gid);
+ALTER INDEX ippucarruamento2014.pracas_e_jardinetes_gid_btree SET TABLESPACE postgiscwbguilherme_index;
+ALTER INDEX ippucarruamento2014.pracas_e_jardinetes_geom_gist SET TABLESPACE postgiscwbguilherme_index;
+ALTER TABLE ippucarruamento2014.pracas_e_jardinetes SET TABLESPACE postgiscwbguilherme_tables;
+COMMIT;
